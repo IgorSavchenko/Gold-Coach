@@ -1,0 +1,118 @@
+.content {
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    @include tablet-landscape-min {
+      flex-direction: row;
+    }
+  }
+  &__promo {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: $dark-grey;
+    border-bottom: 1px dashed $black;
+    text-align: center;
+    @include tablet-min {
+      padding-bottom: 35px;
+    }
+    &__text {
+      margin: 0 auto;
+      font-family: $font-Georgia;
+      font-size: 1.555555rem;//28px
+      font-style: italic;
+      margin-bottom: 45px;
+      @include tablet-min {
+        font-size: 1.333333rem;//24px
+        max-width: 60%;
+      }
+      span {
+        font-size: 1.25em;
+      }
+    }
+    &__banner {
+      display: inline-block;
+      padding: 10px 30px;
+      font-size: 2rem;//36px
+      font-weight: 700;
+      color: $white;
+      background-color: $orange;
+      margin-bottom: 20px;
+      @include tablet-min {
+        margin-bottom: 25px;
+      }
+    }
+    &__description {
+      font-size: 1.666666rem;//30px
+      color: $dark-grey;
+      @include tablet-min {
+        font-size: 2rem;//36px
+      }
+    }
+  }
+  &__description {
+    margin-top: 40px;
+    padding-bottom: 50px;
+    background-image: url('../img/bgd-1.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    &__subtitle {
+      text-align: center;
+      font-size: 1.333333rem;//24px
+      font-weight: 700;
+      color: $dark-grey;
+      @include tablet-min {
+        padding-top: 20px;
+        font-size: 2rem;//36px
+      }
+    }
+    &__text {
+      padding-top: 30px;
+      font-size: 1.333333rem;//24px
+      color: $dark-grey;
+      span {
+        font-weight: 700;
+        @include tablet-min {
+          font-size: 1.125em;//27px
+        }
+      }
+    }
+  }
+  &__collage {
+    background-color: #efefef;
+    background-image: url('../img/bgd-2.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &__gallery {
+      border: 8px solid $orange;
+      background-color: $orange;
+    }
+    &__img {
+      max-width: 20%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__register {
+    &__text {
+      padding-top: 35px;
+      font-size: 1.333333rem;//24px
+      @include tablet-min {
+        font-size: 2rem;//36px
+      }
+    }
+    &__text + &__text {
+      font-weight: 700;
+      @include tablet-min {
+        font-size: 1.666666rem;//30px
+      }
+    }
+    &__reference {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+// variables
+$white: #ffffff;
+$black: #000000;
+$orange: #ff621f;
+$red: #ff332a;
+$dark-blue: #18374b;
+$grey: #eaeaea;
+$dark-grey: #2b2e35;
+$font-PTSans: 'PTSans', sans-serif;
+$font-Circe: 'Circe', sans-serif;
+$font-Georgia: 'Georgia', serif;
+//fonts
+@import "helpers/fonts";
+//helpers
+@import "helpers/media-queries";
+//blocks
+@import "blocks/button";
+@import "blocks/card";
+// sections
+@import "sections/header";
+@import "sections/content";
+@import "sections/footer";
+//common styles
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+body {
+  margin: 0 auto;
+  font-family: $font-PTSans;
+  font-weight: 400;
+  color: $black;
+  min-width: 450px;
+}
+.container {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include tablet-min {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}

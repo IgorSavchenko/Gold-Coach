@@ -1,0 +1,71 @@
+.header {
+  padding-top: 40px;
+  padding-bottom: 55px;
+  text-align: center;
+  @include tablet-min {
+    padding-bottom: 40px;
+  }
+  .container {
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    &__link {
+      position: relative;
+      left: -25px;
+      text-decoration: none;
+      width: 331px;
+      height: 78px;
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-image: url('../img/logo.png');
+    }
+  }
+  &__info {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 1.5rem;//27px
+    color: $dark-blue;
+    &::after {
+      position: absolute;
+      display: block;
+      left: -40px;
+      right: -40px;
+      bottom: -30px;
+      height: 1px;
+      background-color: $black;
+      content: '';
+      @include tablet-landscape-min {
+        left: 10px;
+        right: 10px;
+      }
+    }
+  }
+  &__title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: $font-Circe;
+    font-size: 1.888888rem;//34px
+    text-transform: uppercase;
+    color: $orange;
+    @include tablet-min {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+  &__subtitle {
+    font-family: $font-Circe;
+    font-size: 1.666666rem;//30px
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+  &__reference {
+    text-decoration: none;
+    display: block;
+    color: $white;
+  }
+}
